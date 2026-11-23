@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compilar",
+            "type": "shell",
+            "command": "C:/raylib/w64devkit/bin/gcc.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}/jogo.c",
+                "-o",
+                "${workspaceFolder}/jogo.exe",
+                "-I", "C:/raylib/raylib/src",
+                "-L", "C:/raylib/raylib/src",
+                "-lraylib", "-lopengl32", "-lgdi32", "-lwinmm"
+            ],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
